@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.bg-gray-100 {
+    background-color: #f7f7f7;
+}
+
+.text-blue-800 {
+    color: #2c5282;
+}
+
+.text-blue-500 {
+    color: #4299e1;
+}
+
+.bg-blue-400 {
+    background-color: #63b3ed;
+}
+
+.text-gray-600 {
+    color: #718096;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}

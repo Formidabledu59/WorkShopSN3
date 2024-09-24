@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Étudiant</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/profil.css">
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto my-10 p-5">
+        <div class="md:flex no-wrap md:-mx-2 ">
+            <!-- Profile Card -->
+            <div class="w-full md:w-3/12 md:mx-2">
+                <div class="bg-white p-3 border-t-4 border-blue-400">
+                    <div class="image overflow-hidden">
+                        <img class="h-auto w-full mx-auto"
+                             src="https://source.unsplash.com/300x300/?portrait" 
+                             alt="Student Profile">
+                    </div>
+                    <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">John Doe</h1>
+                    <h3 class="text-gray-600 font-lg text-semibold leading-6">Étudiant en Informatique</h3>
+                    <p class="text-sm text-gray-500 hover:text-gray-600 leading-6">
+                        Passionné par le développement web et l'intelligence artificielle.
+                    </p>
+                    <ul class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
+                        <li class="flex items-center py-3">
+                            <span>Status</span>
+                            <span class="ml-auto"><span class="bg-green-500 py-1 px-2 rounded text-white text-sm">Actif</span></span>
+                        </li>
+                        <li class="flex items-center py-3">
+                            <span>Membre depuis</span>
+                            <span class="ml-auto">Janvier 2023</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Profile Details -->
+            <div class="w-full md:w-9/12 mx-2 h-64">
+                <div class="bg-white p-3 shadow-sm rounded-sm">
+                    <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
+                        <span class="text-blue-500">
+                            <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 13.876l7.757-7.757m0 0l7.757 7.757M5.121 13.876H18.879"/>
+                            </svg>
+                        </span>
+                        <span class="tracking-wide">Informations Personnelles</span>
+                    </div>
+                    <div class="text-gray-700">
+                        <div class="grid md:grid-cols-2 text-sm">
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Nom</div>
+                                <div class="px-4 py-2">John Doe</div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Date de naissance</div>
+                                <div class="px-4 py-2">24 Décembre 2000</div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Email</div>
+                                <div class="px-4 py-2"><a class="text-blue-800" href="mailto:johndoe@example.com">johndoe@example.com</a></div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Téléphone</div>
+                                <div class="px-4 py-2">+33 6 12 34 56 78</div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Adresse</div>
+                                <div class="px-4 py-2">12 rue des écoles, Paris, France</div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Spécialité</div>
+                                <div class="px-4 py-2">Développement Full-Stack</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="block w-full text-blue-800 text-sm font-semibold bg-gray-100 hover:bg-gray-200 focus:outline-none focus:shadow-outline focus:bg-gray-200 rounded-lg p-3 my-4">
+                        Montrer plus
+                    </button>
+                </div>
+
+                <div class="my-4"></div>
+
+                <!-- Skills Section -->
+                <div class="bg-white p-3 shadow-sm rounded-sm">
+                    <div class="grid grid-cols-2">
+                        <div>
+                            <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
+                                <span class="text-blue-500">
+                                    <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </span>
+                                <span class="tracking-wide">Compétences</span>
+                            </div>
+                            <ul class="list-inside space-y-2">
+                                <li>
+                                    <div class="text-teal-600">JavaScript</div>
+                                    <div class="text-gray-500 text-xs">Niveau : Avancé</div>
+                                </li>
+                                <li>
+                                    <div class="text-teal-600">PHP & MySQL</div>
+                                    <div class="text-gray-500 text-xs">Niveau : Intermédiaire</div>
+                                </li>
+                                <li>
+                                    <div class="text-teal-600">HTML & CSS</div>
+                                    <div class="text-gray-500 text-xs">Niveau : Avancé</div>
+                                </li>
+                                <li>
+                                    <div class="text-teal-600">Node.js</div>
+                                    <div class="text-gray-500 text-xs">Niveau : Débutant</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
+                                <span class="text-blue-500">
+                                    <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </span>
+                                <span class="tracking-wide">Intérêts</span>
+                            </div>
+                            <ul class="list-inside space-y-2">
+                                <li>Intelligence Artificielle</li>
+                                <li>Développement Mobile</li>
+                                <li>Jeux Vidéo</li>
+                                <li>Musique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

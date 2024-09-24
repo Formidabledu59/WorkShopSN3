@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpsiConect - Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">EpsiConect</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="hub.html" class="hover:underline">il faut être conecté</a></li>
+                    <li><a href="#login" class="hover:underline">Connexion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen"
+        style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/7099fc28008799.56e41b31e770e.gif');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center text-white">
+                <h2 class="text-5xl font-bold">Bienvenue sur EpsiConect</h2>
+                <p class="mt-4 text-xl">Tu n'es pas inscrit fait-le vite ! <a href="#register"
+                        class="hover:underline">ici</a></p>
+                </p>
+                <a href="#modules"
+                    class="mt-6 inline-block bg-blue-500 px-6 py-3 text-lg rounded shadow-lg hover:bg-blue-400">Explorer
+                    les Modules</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Background -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+        <!-- Modal Content -->
+        <div class="bg-white p-8 rounded shadow-lg w-96">
+            <!-- Login Form -->
+            <div id="loginForm" class="space-y-4">
+                <h2 class="text-2xl font-bold">Connexion</h2>
+                <p>Veuillez entrer votre email et mot de passe :</p>
+                <input type="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded"
+                    id="loginEmail">
+                <input type="password" placeholder="Mot de passe" class="w-full p-2 border border-gray-300 rounded"
+                    id="loginPassword">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded" id="loginBtn">Se connecter</button>
+                <p class="text-sm mt-2">Admin ? <a href="#" class="text-blue-500">Cliquez ici</a></p>
+            </div>
+
+            <!-- Registration Form -->
+            <div id="registerForm" class="space-y-4 hidden">
+                <h2 class="text-2xl font-bold">Inscription</h2>
+                <p>Veuillez entrer vos informations :</p>
+                <input type="email" placeholder="Email" class="w-full p-2 border border-gray-300 rounded"
+                    id="registerEmail">
+                <input type="password" placeholder="Mot de passe" class="w-full p-2 border border-gray-300 rounded"
+                    id="registerPassword">
+                <textarea placeholder="Message pour les admins" class="w-full p-2 border border-gray-300 rounded"
+                    id="registerMessage"></textarea>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded" id="registerBtn">S'inscrire</button>
+                <p id="confirmationMessage" class="text-green-500 hidden">Vos informations sont en cours de traitement,
+                    vous serez alerté par mail suite à la création de votre compte.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
