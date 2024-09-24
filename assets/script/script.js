@@ -57,7 +57,7 @@ document.getElementById('registerBtn').addEventListener('click', function(e) {
         return; // Arrêter l'exécution si le mot de passe est invalide
     }
 
-    if (email && password && message) {
+    if (email && password) {
         // Afficher le message de confirmation
         confirmationMessage.classList.remove('hidden');
         

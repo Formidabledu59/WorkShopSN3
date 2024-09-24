@@ -1,0 +1,64 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Empêche le scroll */
+}
+*
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1f2937;
+}
+
+.bg-blue-600 {
+    background-color: #2563eb;
+}
+
+.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.bg-blue-400 {
+    background-color: #60a5fa;
+}
+
+.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.shadow-lg {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Eviter le centrage dans la barre de navigation */
+nav ul {
+    justify-content: flex-end; /* Alignement des éléments à droite */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Assurer que les sections prennent toute la hauteur de l'écran */
+.min-h-screen {
+    min-height: 100vh; /* Minimum de 100% de la hauteur de la fenêtre */
+}
