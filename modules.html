@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpsiConect - Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style_hub.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">EpsiConect</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="fiche_etudiant.html" class="hover:underline">Profil Étudiant</a></li>
+                    <li><a href="#modules" class="hover:underline">Modules</a></li>
+                    <li><a href="#logout" class="hover:underline">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Modules Section -->
+    <section id="modules" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Modules Disponibles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Chat</h3>
+                    <p class="text-gray-600">Discutez avec vos amis et collègues en temps réel.</p>
+                    <a href="#chat" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Fiche Étudiant</h3>
+                    <p class="text-gray-600">Gérez et visualisez les profils des étudiants.</p>
+                    <a href="fiche_etudiant.html" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Visualisation des Salles</h3>
+                    <p class="text-gray-600">Visualisez l’état des salles en temps réel.</p>
+                    <a href="#rooms" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Événements à Venir</h3>
+                    <p class="text-gray-600">Découvrez les événements à venir (BDE, EPSI/WIS, Campus, etc.).</p>
+                    <a href="#events" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Planning de la Semaine</h3>
+                    <p class="text-gray-600">Consultez le planning de la semaine/quinzaine.</p>
+                    <a href="#planning" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Diffusion d'Informations</h3>
+                    <p class="text-gray-600">Accédez à des informations diffusées sur plusieurs écrans.</p>
+                    <a href="#info" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Plan du Campus</h3>
+                    <p class="text-gray-600">Visualisez le plan interactif du campus.</p>
+                    <a href="#campus-map" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Réservation de Matériel</h3>
+                    <p class="text-gray-600">Réservez le matériel et les machines via myDiL.</p>
+                    <a href="#reservation" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Espace "Je Signale"</h3>
+                    <p class="text-gray-600">Signalez tout problème dans l'école.</p>
+                    <a href="#report" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Espace "Notre Environnement"</h3>
+                    <p class="text-gray-600">Suivez les conditions environnementales en temps réel.</p>
+                    <a href="#environment" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Espace "Infos Utiles"</h3>
+                    <p class="text-gray-600">Accédez à des informations pratiques sur l'école.</p>
+                    <a href="#info" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4">Nos Apprenants ont du Talent</h3>
+                    <p class="text-gray-600">Découvrez les talents de vos camarades.</p>
+                    <a href="#talents" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Accéder</a>
+                </div>
+                <!-- Ajouter d'autres modules ici si nécessaire -->
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
