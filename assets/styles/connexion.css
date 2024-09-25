@@ -1,0 +1,124 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1f2937;
+}
+
+.bg-blue-600 {
+    background-color: #2563eb;
+}
+
+.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.bg-blue-400 {
+    background-color: #60a5fa;
+}
+
+.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.shadow-lg {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Conteneur de la page de connexion */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.login-wrapper {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Section gauche : texte explicatif ou image */
+.login-left {
+    width: 50%;
+    background: url('https://source.unsplash.com/random') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-left h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login-left p {
+    font-size: 1.2rem;
+}
+
+/* Section droite : formulaire de connexion */
+.login-right {
+    width: 50%;
+    padding: 40px;
+}
+
+.login-right h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+.login-right input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-right button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-right button:hover {
+    background-color: #3b82f6;
+}
+
