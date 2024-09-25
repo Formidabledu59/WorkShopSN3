@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Fiches Étudiants - EpsiConect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center shadow-md">
+        <h1 class="text-2xl font-bold">EpsiConect Admin</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Menu</a></li>
+                <li><a href="#" class="hover:underline">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white min-h-screen p-6">
+            <ul class="space-y-4">
+                <li><a href="admin.html" class="hover:bg-blue-500 p-3 block">Tableau de bord</a></li>
+                <li><a href="gestion_etd.html" class="hover:bg-blue-500 p-3 block">Gestion des utilisateurs</a></li>
+                <li><a href="gestion_fiche.html" class="hover:bg-blue-500 p-3 block">Gestion des fiches étudiants</a></li>
+                <li><a href="support.html" class="hover:bg-blue-500 p-3 block">Support</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-10">
+            <h2 class="text-4xl font-bold mb-6">Gestion des Fiches Étudiants</h2>
+
+            <!-- Table of Student Profiles -->
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <div class="flex justify-between mb-4">
+                    <h3 class="text-xl font-semibold">Liste des fiches étudiants</h3>
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Ajouter une fiche</a>
+                </div>
+
+                <table class="min-w-full bg-white">
+                    <thead class="bg-gray-800 text-white">
+                        <tr>
+                            <th class="w-1/5 py-2">Nom</th>
+                            <th class="w-1/5 py-2">Prénom</th>
+                            <th class="w-1/5 py-2">Email</th>
+                            <th class="w-1/5 py-2">Réseaux Sociaux</th>
+                            <th class="w-1/5 py-2">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center border-b">
+                            <td class="py-4">Dupont</td>
+                            <td class="py-4">Jean</td>
+                            <td class="py-4">jean.dupont@example.com</td>
+                            <td class="py-4">
+                                <a href="#" class="text-blue-500 hover:underline">Voir réseaux</a>
+                            </td>
+                            <td class="py-4">
+                                <a href="#" class="text-blue-500 hover:underline">Modifier</a> | 
+                                <a href="#" class="text-red-500 hover:underline">Supprimer</a>
+                            </td>
+                        </tr>
+                        <!-- Repeater for all student profiles -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+    </div>
+
+</body>
+</html>

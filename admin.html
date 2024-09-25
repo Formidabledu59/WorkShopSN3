@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - EpsiConect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center shadow-md">
+        <h1 class="text-2xl font-bold">EpsiConect Admin</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Menu</a></li>
+                <li><a href="#" class="hover:underline">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="flex">
+        <aside class="w-64 bg-gray-800 text-white min-h-screen p-6">
+            <ul class="space-y-4">
+                <li><a href="admin.html" class="hover:bg-blue-500 p-3 block">Tableau de bord</a></li>
+                <li><a href="gestion_etd.html" class="hover:bg-blue-500 p-3 block">Gestion des utilisateurs</a></li>
+                <li><a href="gestion_fiche.html" class="hover:bg-blue-500 p-3 block">Gestion des fiches étudiants</a></li>
+                <li><a href="support.html" class="hover:bg-blue-500 p-3 block">Support</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-10">
+            <h2 class="text-4xl font-bold mb-6">Tableau de bord</h2>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Total Utilisateurs</h3>
+                    <p class="text-3xl font-bold">124</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Fiches Étudiants</h3>
+                    <p class="text-3xl font-bold">98</p>
+                </div>
+                <div class="bg-white p-6 shadow-md rounded-lg">
+                    <h3 class="text-lg font-semibold">Connexions aujourd'hui</h3>
+                    <p class="text-3xl font-bold">12</p>
+                </div>
+            </div>
+
+            <!-- Graphs and Activity -->
+            <div class="mt-10">
+                <h3 class="text-2xl font-semibold mb-4">Activité récente</h3>
+                <canvas id="activityChart" class="w-full h-64 bg-white shadow-md rounded-lg"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('activityChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'],
+                datasets: [{
+                    label: 'Connexions par jour',
+                    data: [10, 15, 12, 18, 9],
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            }
+        });
+    </script>
+</body>
+</html>
