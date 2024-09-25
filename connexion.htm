@@ -6,34 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EpsiConect - Connexion</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/connexion.css">
+    <link rel="stylesheet" href="assets/styles/style_index.css">
 </head>
 
 <body class="bg-gray-100">
 
-    <!-- Conteneur de la page de connexion -->
-    <div class="login-container">
-        <div class="login-wrapper">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">EpsiConect</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="hub.html" class="hover:underline">Il faut être connecté</a></li>
+                    <li><a href="connexion.htm" class="hover:underline">Connexion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <!-- Section gauche -->
-            <div class="login-left">
-                <h2>Bienvenue sur EpsiConect</h2>
-                <p>Connectez-vous pour accéder à votre hub étudiant et découvrir toutes les fonctionnalités.</p>
+    <!-- Section de connexion sans cadre blanc -->
+    <section class="min-h-screen flex items-center justify-center bg-cover bg-center relative"
+        style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/7099fc28008799.56e41b31e770e.gif');">
+        
+        <!-- Cadre semi-transparent couvrant toute la page -->
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-between w-full px-16">
+
+            <!-- Colonne gauche avec texte/image -->
+            <div class="w-1/2 text-white p-8">
+                <h2 class="text-5xl font-bold">Bienvenue sur EpsiConect</h2>
+                <p class="mt-4 text-lg">Accède à ton hub étudiant pour découvrir les fonctionnalités dédiées aux étudiants de l’EPSI.</p>
+                <img src="https://media.licdn.com/dms/image/v2/C4E16AQEJfoMDwv7fMQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1652694619947?e=2147483647&v=beta&t=suPIxOX3Ja1xlw1MmKQatQTMvasWFszmHEopNftajIw" alt="Image Epsi" class="mt-6 rounded-lg">
             </div>
 
-            <!-- Section droite : Formulaire de connexion -->
-            <div class="login-right">
-                <h2>Connexion</h2>
-                <form>
-                    <input type="email" placeholder="Adresse email" required>
-                    <input type="password" placeholder="Mot de passe" required>
-                    <button type="submit">Se connecter</button>
+            <!-- Colonne droite : Formulaire de connexion -->
+            <div class="w-1/2 p-8">
+                <h2 class="text-3xl font-bold text-white">Connexion</h2>
+                <form class="mt-6">
+                    <input type="email" placeholder="Adresse email" class="w-full p-3 mb-4 border border-gray-300 rounded-lg" required>
+                    <input type="password" placeholder="Mot de passe" class="w-full p-3 mb-4 border border-gray-300 rounded-lg" required>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-500">Se connecter</button>
                 </form>
             </div>
 
         </div>
-    </div>
+    </section>
 
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

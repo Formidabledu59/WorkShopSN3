@@ -27,10 +27,6 @@ h1, h2, h3 {
     background-color: #3b82f6;
 }
 
-.bg-blue-400 {
-    background-color: #60a5fa;
-}
-
 .bg-gray-100 {
     background-color: #f3f4f6;
 }
@@ -43,82 +39,56 @@ h1, h2, h3 {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-a:hover {
-    opacity: 0.8;
+/* Cadre semi-transparent couvrant toute la page */
+.bg-opacity-60 {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Conteneur de la page de connexion */
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f3f4f6;
+.absolute {
+    position: absolute;
 }
 
-.login-wrapper {
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Style du formulaire et de la disposition sans cadre blanc */
+.flex {
     display: flex;
-    width: 800px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-1/2 {
+    width: 50%;
+}
+
+.px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.rounded-lg {
     border-radius: 10px;
-    overflow: hidden;
 }
 
-/* Section gauche : texte explicatif ou image */
-.login-left {
-    width: 50%;
-    background: url('https://source.unsplash.com/random') no-repeat center center;
+.text-white {
+    color: #ffffff;
+}
+
+.bg-cover {
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding: 40px;
-    text-align: center;
 }
 
-.login-left h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.bg-center {
+    background-position: center;
 }
-
-.login-left p {
-    font-size: 1.2rem;
-}
-
-/* Section droite : formulaire de connexion */
-.login-right {
-    width: 50%;
-    padding: 40px;
-}
-
-.login-right h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2563eb;
-}
-
-.login-right input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.login-right button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.login-right button:hover {
-    background-color: #3b82f6;
-}
-
